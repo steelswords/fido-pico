@@ -1,0 +1,19 @@
+# Fido Pico
+
+This project works in conjuntion with my Fido robot.
+Because the Nvidia Jetson does not have a built-in ADC, I need something to report
+sensor values of the Sharp IR range sensors I'm using. This reads from the ADC
+and publishes it over serial.
+
+# Building
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+# Installing on Raspberry Pi Pico
+While pressing the BOOTSEL button on the Pico, connect it to your computer with a Micro USB cable.
+Take the generated `build/fido_pico.uf2` and copy it to the Pico drive that shows up.
+Restart the Pico.
