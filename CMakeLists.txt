@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
 set(PICO_SDK_PATH /home/tristan/Repos/pico-sdk)
+set(PICO_BOARD pico_w)
 
 include (${PICO_SDK_PATH}/pico_sdk_init.cmake)
 
